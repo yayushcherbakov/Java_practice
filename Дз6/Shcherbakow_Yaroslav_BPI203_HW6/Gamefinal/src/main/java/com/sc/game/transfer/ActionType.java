@@ -1,0 +1,15 @@
+package com.sc.game.transfer;
+
+public enum ActionType {
+    GET_NAME,
+    CONNECTION_CANCELED,
+    SET_NAME,
+    WAITING_FOR_OTHER_PLAYERS,
+    START_GAME,
+    FETCH_NEXT_FIGURE,
+    PUSH_NEXT_FIGURE,
+    END_GAME,
+    PUBLISH_RESULT,
+    NEW_GAME,
+    OPPONENT_CLOSE_CLIENT
+}

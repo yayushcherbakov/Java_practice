@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450" prefWidth="900" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sc.game.view.GameController">
+    <GridPane fx:id="gameGrid" visible="false">
+        <AnchorPane.rightAnchor>0</AnchorPane.rightAnchor>
+        <AnchorPane.leftAnchor>450</AnchorPane.leftAnchor>
+        <AnchorPane.bottomAnchor>0</AnchorPane.bottomAnchor>
+        <AnchorPane.topAnchor>0</AnchorPane.topAnchor>
+    </GridPane>
+
+    <GridPane fx:id="subGrid" visible="false">
+        <AnchorPane.rightAnchor>600</AnchorPane.rightAnchor>
+        <AnchorPane.leftAnchor>150</AnchorPane.leftAnchor>
+        <AnchorPane.bottomAnchor>50</AnchorPane.bottomAnchor>
+        <AnchorPane.topAnchor>250</AnchorPane.topAnchor>
+    </GridPane>
+
+    <Label fx:id="stepCountLabel" layoutX="216.0" layoutY="120.0" text="Steps count: 0" visible="false">
+    </Label>
+
+    <Label fx:id="timeSpentLabel" layoutX="216.0" layoutY="86.0" text="Spent time: 0" visible="false">
+    </Label>
+
+    <Button fx:id="restartButton" layoutX="115.0" layoutY="200.0" mnemonicParsing="false" onAction="#onRestartButtonClick" prefHeight="31.0" prefWidth="141.0" text="START NEW GAME" visible="false">
+    </Button>
+
+    <Button fx:id="finishButton" layoutX="216.0" layoutY="162.0" mnemonicParsing="false" onAction="#onFinishButtonClick" prefHeight="31.0" prefWidth="141.0" text="FINISH" visible="false">
+
+    </Button>
+
+    <TextField fx:id="nameTextField" layoutX="375.0" layoutY="185.0" visible="false" />
+    <Button fx:id="registerButton" layoutX="375.0" layoutY="225.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" prefHeight="25.0" prefWidth="150.0" text="Start" visible="false" />
+
+    <Label fx:id="stateLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" prefHeight="450.0" prefWidth="900.0" text="Message" textAlignment="CENTER" visible="false">
+        <font>
+            <Font size="34.0" />
+        </font>
+    </Label>
+
+    <Button fx:id="connectButton" layoutX="375.0" layoutY="266.0" mnemonicParsing="false" onAction="#onConnectButtonClick" prefHeight="25.0" prefWidth="149.0" text="Connect" />
+    <TextField fx:id="hostTextField" layoutX="375.0" layoutY="185.0" />
+    <TextField fx:id="portTextField" layoutX="376.0" layoutY="225.0" />
+
+    <Label fx:id="maxGameTimeLabel" layoutX="26.0" layoutY="25.0" text="maxGameTimeLabel" visible="false" />
+    <ListView fx:id="opponentsListView" disable="true" layoutX="26.0" layoutY="101.0" prefHeight="136.0" prefWidth="99.0" visible="false" />
+    <Label fx:id="userNameLabel" layoutX="26.0" layoutY="53.0" text="userNameLabel" visible="false" />
+   <ListView fx:id="resultsListView" disable="true" layoutX="376.0" layoutY="110.0" prefHeight="200.0" prefWidth="450.0" visible="false" />
+   <Button fx:id="exitButton" layoutX="115.0" layoutY="244.0" mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="31.0" prefWidth="141.0" text="EXIT" visible="false" />
+   <Label fx:id="resultLabel" alignment="CENTER" layoutX="26.0" layoutY="140.0" prefHeight="58.0" prefWidth="319.0" text="You result: WON!!!" visible="false">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <Button fx:id="getTopResultsButton" layoutX="115.0" layoutY="291.0" mnemonicParsing="false" onAction="#onTopResultsButtonClick" prefHeight="31.0" prefWidth="141.0" text="TOP 10" visible="false" />
+   <Button fx:id="getTopResultsOnLoginButton" layoutX="375.0" layoutY="266.0" mnemonicParsing="false" onAction="#onTopResultsButtonClick" prefHeight="25.0" prefWidth="149.0" text="Top 10" visible="false" />
+</AnchorPane>

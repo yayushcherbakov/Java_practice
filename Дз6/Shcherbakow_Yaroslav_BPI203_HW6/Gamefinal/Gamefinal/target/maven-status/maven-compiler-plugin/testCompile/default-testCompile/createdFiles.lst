@@ -1,0 +1,6 @@
+com\sc\game\core\CellTest.class
+com\sc\game\core\BoardTest.class
+com\sc\game\core\FigureTest.class
+com\sc\game\core\GameServiceTest.class
+com\sc\game\core\FigureGeneratorTest.class
+com\sc\game\core\PositionTest.class

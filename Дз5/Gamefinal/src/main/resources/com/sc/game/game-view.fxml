@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.sc.game.GameController">
+    <GridPane fx:id="gameGrid">
+        <AnchorPane.rightAnchor>0</AnchorPane.rightAnchor>
+        <AnchorPane.leftAnchor>450</AnchorPane.leftAnchor>
+        <AnchorPane.bottomAnchor>0</AnchorPane.bottomAnchor>
+        <AnchorPane.topAnchor>0</AnchorPane.topAnchor>
+    </GridPane>
+
+    <GridPane fx:id="subGrid">
+        <AnchorPane.rightAnchor>600</AnchorPane.rightAnchor>
+        <AnchorPane.leftAnchor>150</AnchorPane.leftAnchor>
+        <AnchorPane.bottomAnchor>50</AnchorPane.bottomAnchor>
+        <AnchorPane.topAnchor>250</AnchorPane.topAnchor>
+    </GridPane>
+
+    <Label fx:id="stepCountLabel" text="Steps count: 0" alignment="BASELINE_CENTER">
+        <AnchorPane.rightAnchor>550</AnchorPane.rightAnchor>
+        <AnchorPane.leftAnchor>100</AnchorPane.leftAnchor>
+        <AnchorPane.bottomAnchor>375</AnchorPane.bottomAnchor>
+        <AnchorPane.topAnchor>25</AnchorPane.topAnchor>
+    </Label>
+
+    <Label fx:id="timeSpentLabel" text="Spent time: 0" alignment="BASELINE_CENTER">
+        <AnchorPane.rightAnchor>550</AnchorPane.rightAnchor>
+        <AnchorPane.leftAnchor>100</AnchorPane.leftAnchor>
+        <AnchorPane.bottomAnchor>350</AnchorPane.bottomAnchor>
+        <AnchorPane.topAnchor>50</AnchorPane.topAnchor>
+    </Label>
+
+    <Button fx:id="restartButton" text="START" alignment="BASELINE_CENTER" onAction="#onRestartButtonClick">
+        <AnchorPane.rightAnchor>550</AnchorPane.rightAnchor>
+        <AnchorPane.leftAnchor>100</AnchorPane.leftAnchor>
+        <AnchorPane.topAnchor>100</AnchorPane.topAnchor>
+        <AnchorPane.bottomAnchor>300</AnchorPane.bottomAnchor>
+    </Button>
+
+    <Button fx:id="finishButton" text="FINISH" alignment="BASELINE_CENTER" visible="false" onAction="#onFinishButtonClick">
+        <AnchorPane.rightAnchor>550</AnchorPane.rightAnchor>
+        <AnchorPane.leftAnchor>100</AnchorPane.leftAnchor>
+        <AnchorPane.bottomAnchor>250</AnchorPane.bottomAnchor>
+        <AnchorPane.topAnchor>150</AnchorPane.topAnchor>
+    </Button>
+</AnchorPane>
